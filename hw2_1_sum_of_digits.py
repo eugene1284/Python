@@ -8,6 +8,7 @@
 def sum_of_number(number: any):
    sum = 0
    num = str(number).replace(".", "")
+   num = str(number).replace("-", "")
    for index in num:
       sum += int(index)
    return sum
