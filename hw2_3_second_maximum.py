@@ -10,6 +10,7 @@
 Вывод:
 7
 """
+"""
 list = [1,7,9,0,1,9,15]
 
 max = list[0]
@@ -33,3 +34,16 @@ while j < len(list):
     j += 1
 
 print(second_max)
+"""
+
+# 2
+n = int(input())
+max_first = n
+max_second = n
+
+while n != 0:
+    n = int(input())
+    if max_first < n:
+        max_second = max_first
+        max_first = n
+print(max_second)

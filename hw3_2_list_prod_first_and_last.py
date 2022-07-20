@@ -6,20 +6,8 @@
 - [2, 3, 4, 5, 6] => [12, 15, 16];
 - [2, 3, 5, 6] => [12, 15]
 
-def product(list):
-    if len(list) % 2 == 0:
-            i = 1
-            product_list = 1
-            while i <= len(list)/2:
-                product_list[i] = list[i] * list[-i]
-                i += 1
-            print(product_list)
-    if len(list) % 2 > 0:
-        #to do
-        return
-    return
-
 """
+
 def product(list):
     len_list = len(list)
     half_len_list = len_list / 2
@@ -33,7 +21,7 @@ def product(list):
                 product_list[i] = list[i] * list[j]
                 i += 1
                 j += (-1)
-            print(product_list)
+            print(list, '= >', product_list)
 
 
     if len_list % 2 > 0:
@@ -45,14 +33,14 @@ def product(list):
                 i += 1
                 j += (-1)
 #            product_list[i] = list[i] * list[i]
-            print(product_list)
+            print(list2, '= >', product_list)
     return
 
 list = [2, 3, 5, 6]
 list2 = [2, 3, 4, 5, 6]
 
-print(product(list))
-print(product(list2))
+product(list)
+product(list2)
 
 #len(list)  #4
 #len(list2) #5
