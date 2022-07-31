@@ -45,8 +45,7 @@ for i in range(9):
     while (columns < 1 or columns > 3):
         print("введите число от 1 до 3")
         columns = int(input("Введите номер столбца: "))
-    while (row < 1 or row > 3 or columns < 1 or columns > 3):
-        print("введите число от 1 до 3")
+
     if arr[row - 1][columns - 1] == "X" or arr[row - 1][columns - 1] == "0":
         print("Эта клетка занята, ты пропускаешь ход")
     else:
