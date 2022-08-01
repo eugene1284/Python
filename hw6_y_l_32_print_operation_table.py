@@ -33,7 +33,7 @@ def print_operation_table(operation, number_rows, number_columns):
                 print(j, end='\t')
             print()
 
-operation = str(input('Enter operation: '))
-number_rows = int(input('Enter count rows: '))
-number_columns = int(input('Enter count columns: '))
+operation = str(input('Введите операцию: "*" или "**" или "+" : '))
+number_rows = int(input('Введите количество строк: '))
+number_columns = int(input('Введите количество столбцов: '))
 print_operation_table(operation, number_rows, number_columns)
