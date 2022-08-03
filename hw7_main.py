@@ -49,3 +49,22 @@
 *и т.д.*
 ** (Модульность) Логирование, Главный файл и тд****
 """
+
+import hw7_read_from_database
+import hw7_write
+import hw7_logger
+
+print("You want read or write? (print 'read' or 'write' only): ")
+read_or_write_decision = input()
+
+print(f"You want {read_or_write_decision} file 1 classroom or file 2? (print '1' or '2' only): ")
+file_number = input()
+
+if read_or_write_decision == "read":
+    hw7_read_from_database.read_from_database(file_number)
+
+if read_or_write_decision == "write":
+    hw7_write.write_in_database(file_number)
+
+string = "user choise " + read_or_write_decision + " in file_number " + str(file_number)
+hw7_logger.log(string)

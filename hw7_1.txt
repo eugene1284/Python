@@ -1,0 +1,1 @@
+id;table;row;variant;lesson_id;student_id
