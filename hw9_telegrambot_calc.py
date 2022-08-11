@@ -79,7 +79,7 @@ def div_command(update: Update, context: CallbackContext):
     y = int(items[2])
     update.message.reply_text(f'{x}/{y} = {x/y}')
 
-updater = Updater("5416485291:AAGUhLv4wrP-E2Y5Cf3Vdn_gfgMAxaopQ9s")
+updater = Updater("token")
 
 updater.dispatcher.add_handler(CommandHandler("start", start))
 if (OPERATION == "+"): updater.dispatcher.add_handler(CommandHandler("sum", sum_command))
