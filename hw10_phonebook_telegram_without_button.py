@@ -6,8 +6,8 @@
 from telegram import Bot, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler, CallbackQueryHandler
 
-bot = Bot(token='5529752966:AAGcq-Ca6ayHJ0rLQirUVwMAAxinh6IRCT8')
-updater = Updater(token='5529752966:AAGcq-Ca6ayHJ0rLQirUVwMAAxinh6IRCT8')
+bot = Bot(token='')
+updater = Updater(token='')
 dispatcher = updater.dispatcher
 
 
